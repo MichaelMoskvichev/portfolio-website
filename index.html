@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moskvichev Mikhail - iOS Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.skill-bar { transition: width 0.3s ease-in-out; }
+.project-card { transition: transform 0.3s ease; }
+.project-card:hover { transform: translateY(-5px); }
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#007AFF',
+secondary: '#5856D6'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<!-- EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("B0YH0Jy1nrL6hCrRr"); 
+  })();
+</script>
+</head>
+<body class="bg-white min-h-screen text-gray-800">
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+<div class="container mx-auto px-6 py-4">
+<nav class="flex items-center justify-between">
+<h1 class="text-2xl font-bold text-gray-800">Moskvichev Mikhail</h1>
+<div class="flex items-center space-x-8">
+<a href="#about" class="text-gray-600 hover:text-primary">About</a>
+<a href="#portfolio" class="text-gray-600 hover:text-primary">Portfolio</a>
+<a href="#skills" class="text-gray-600 hover:text-primary">Skills</a>
+<a href="#contact" class="text-gray-600 hover:text-primary">Contact</a>
+</div>
+</nav>
+</div>
+</header>
+<main class="pt-20">
+<section class="container mx-auto px-6 py-20">
+<div class="flex items-center justify-between">
+<div class="w-1/2">
+<h2 class="text-5xl font-bold text-gray-800 mb-6">Building Elegant iOS Apps That Users Love</h2>
+<p class="text-xl text-gray-600 mb-8">Middle iOS Developer with 3+ years of experience building innovative and user-centric mobile applications. Focused on delivering beautiful, performant, and scalable mobile apps with a strong UI and UX foundation.</p>
+<a href="Project-Portfolio-Collection.html" data-readdy="true">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 cursor-pointer">View My Work</button>
+</a>
+</div>
+<div class="w-1/2 flex justify-end">
+<img src="photo1.jpg" alt="Michael Moskvichev" class="w-80 h-80 rounded-full object-cover shadow-xl">
+</div>
+</div>
+<section id="about" class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12">About Me</h2>
+      <div class="flex items-center gap-12">
+        <div class="w-1/3">
+          <img src="IMG_9218.jpg" alt="About Moskvichev Mikhail" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+        </div>
+        <div class="w-2/3">
+          <div class="space-y-6">
+            <p class="text-lg text-gray-600 leading-relaxed">
+              My name is Mikhail, and I’m an iOS developer with nearly four years of experience. I began learning programming through online courses on Udemy, but most of my growth came from hands-on practice and working on real-world tasks.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I enjoy the full development cycle — from the initial idea to a production-ready app. I prefer implementing all solutions independently, from architecture to custom animations. I have a special passion for crafting unique user interfaces that feel intuitive, smooth, and visually appealing.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              I'm detail-oriented and value clean, readable code. I thrive both in team environments and in leadership roles. My colleagues often describe me as calm, respectful, and focused on delivering high-quality results.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              Outside of development, I enjoy working out, going for walks, playing video games, and building model ships and cars — a hobby that teaches patience and precision.
+            </p>
+            <div class="grid grid-cols-2 gap-6 mt-8">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-3xl font-bold text-primary mb-2">4</div>
+                <div class="text-gray-600">Years of Experience</div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                <div class="text-gray-600">Favorite Technologies</div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-3xl font-bold text-primary mb-2">∞</div>
+                <div class="text-gray-600">Ideas & Energy</div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-3xl font-bold text-primary mb-2">10+</div>
+                <div class="text-gray-600">Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+<section id="portfolio" class="bg-gray-50 py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">My Projects</h2>
+<div class="grid grid-cols-2 gap-8">
+
+  <div class="bg-white p-6 rounded-lg shadow-sm project-card">
+    <img src="pdfeditor.png" alt="Edit PDF" class="w-full h-48 object-cover rounded-lg mb-4">
+    <h3 class="text-xl font-bold text-gray-900 mb-2">Edit PDF, Read PDF, Sign PDF</h3>
+    <p class="text-gray-600 mb-4">A user-friendly PDF editor and reader designed for seamless document management, annotation, and reading on iPhone and iPad.</p>
+    
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UIKit</span>
+      <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PDFKit</span>
+      <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+      <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">IQKeyboardManager</span>
+      <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+      <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+      <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">MobileCoreServices</span>
+      <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">VisionKit</span>
+      <span class="px-3 py-1 bg-purple-50 text-purple-900 rounded-full text-sm">SwiftEntryKit</span>
+      <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Lottie</span>
+      <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Alamofire</span>
+      <span class="px-3 py-1 bg-green-50 text-green-900 rounded-full text-sm">OCR</span>
+      <span class="px-3 py-1 bg-pink-50 text-pink-900 rounded-full text-sm">Realm</span>
+      <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">MessageUI</span>
+      <span class="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-sm">WebKit</span>
+      <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">MVC</span>
+    </div>
+    
+    <a href="https://apps.apple.com/us/app/pdf-document-editor-read-book/id6504371765" target="_blank" class="text-primary hover:text-primary/80 flex items-center">
+      <span>View in App Store</span>
+      <i class="ri-arrow-right-line ml-2"></i>
+    </a>
+  </div>
+  
+<div class="bg-white p-6 rounded-lg shadow-sm project-card">
+<img src="mypreg.png" alt="My Pregnancy Life: Prenatal" class="w-full h-48 object-cover rounded-lg mb-4">
+<h3 class="text-xl font-bold text-gray-900 mb-2">My Pregnancy Life: Prenatal</h3>
+<p class="text-gray-600 mb-4">My Pregnancy Life is your essential guide and assistant through every stage of your pregnancy.
+  Track your journey, understand your baby's growth, and discover essential tips, articles, and goods curated just for you. Get vital information, articles and videos about your pregnancy and your baby's growth week by week.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+<span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UIKit</span>
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Contentful</span>
+<span class="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-sm">WebKit</span>
+<span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">GoogleMobileAds</span>
+<span class="px-3 py-1 bg-pink-50 text-pink-900 rounded-full text-sm">Realm</span>
+<span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+<span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+<span class="px-3 py-1 bg-purple-50 text-purple-900 rounded-full text-sm">SwiftFortuneWheel</span>
+<span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">MVC</span>
+<span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Amplitude</span>
+<span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">AVKit</span>
+</div>
+<a href="https://apps.apple.com/app/id6670175020" class="text-primary hover:text-primary/80 flex items-center">
+<span>View in App Store</span>
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="Project-Portfolio-Collection.html" data-readdy="true">
+<button class="bg-gray-700 border border-primary text-primary px-8 py-3 !rounded-button hover:bg-gray-600 cursor-pointer">View All Projects</button>
+</a>
+</div>
+</div>
+</section>
+<section id="skills" class="bg-white py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Technical Skills</h2>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<h3 class="text-xl font-bold text-gray-900 mb-6">Development</h3>
+<div class="space-y-4">
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-gray-700">Swift</span>
+<span class="text-gray-500">95%</span>
+</div>
+<div class="h-2 bg-gray-200 rounded-full">
+<div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-gray-700">UIKit</span>
+<span class="text-gray-500">90%</span>
+</div>
+<div class="h-2 bg-gray-200 rounded-full">
+<div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-gray-700">Realm</span>
+<span class="text-gray-500">80%</span>
+</div>
+<div class="h-2 bg-gray-200 rounded-full">
+<div class="h-2 bg-primary rounded-full skill-bar" style="width: 80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-2">
+<span class="text-gray-700">MapKit</span>
+<span class="text-gray-500">75%</span>
+</div>
+<div class="h-2 bg-gray-200 rounded-full">
+<div class="h-2 bg-primary rounded-full skill-bar" style="width: 75%"></div>
+</div>
+</div>
+<div>
+  <div class="flex justify-between mb-2">
+  <span class="text-gray-700">Firebase</span>
+  <span class="text-gray-500">65%</span>
+  </div>
+  <div class="h-2 bg-gray-200 rounded-full">
+  <div class="h-2 bg-primary rounded-full skill-bar" style="width: 65%"></div>
+  </div>
+  </div>
+<div class="flex justify-between mb-2">
+    <span class="text-gray-700">SwiftUI</span>
+    <span class="text-gray-500">50%</span>
+    </div>
+    <div class="h-2 bg-gray-200 rounded-full">
+    <div class="h-2 bg-primary rounded-full skill-bar" style="width: 50%"></div>
+    </div>
+    </div>
+    <div>
+</div>
+</div>
+<div>
+  <h3 class="text-xl font-bold text-gray-900 mb-6">Tools & Technologies</h3>
+  <!-- Контейнер со скроллом -->
+  <div class="overflow-x-auto">
+    <!-- Flex контейнер для страниц -->
+    <div class="flex space-x-4 min-w-[900px]">
+      <!-- Каждая страница 3x3 -->
+      <div class="grid grid-cols-3 gap-8 min-w-[500px]">
+        <!-- вставь сюда первые 9 элементов -->
+        <!-- пример одного блока -->
+        <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+          <i class="ri-xcode-line text-4xl text-primary mb-2"></i>
+          <span class="text-gray-700">Xcode</span>
+          </div>
+          <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+          <i class="ri-git-branch-line text-4xl text-primary mb-2"></i>
+          <span class="text-gray-700">Git</span>
+          </div>
+          <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+          <i class="ri-database-2-line text-4xl text-primary mb-2"></i>
+          <span class="text-gray-700">CoreData</span>
+          </div>
+            <!-- Swift -->
+            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+              <i class="ri-code-line text-4xl text-primary mb-2"></i>
+              <span class="text-gray-700">Swift</span>
+            </div>
+            
+            <!-- iOS -->
+            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+              <i class="ri-apple-line text-4xl text-primary mb-2"></i>
+              <span class="text-gray-700">iOS</span>
+            </div>
+                
+            <!-- UIKit -->
+            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+              <i class="ri-braces-line text-4xl text-primary mb-2"></i>
+              <span class="text-gray-700">UIKit</span>
+            </div>
+          
+            <!-- JSON -->
+            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+              <i class="ri-file-code-line text-4xl text-primary mb-2"></i>
+              <span class="text-gray-700">JSON</span>
+            </div>
+            
+            <!-- UI -->
+            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+              <i class="ri-article-line text-4xl text-primary mb-2"></i>
+              <span class="text-gray-700">UI</span>
+            </div>
+            
+            <!-- SnapKit -->
+            <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+              <i class="ri-layout-2-line text-4xl text-primary mb-2"></i>
+              <span class="text-gray-700">SnapKit</span>
+            </div>
+      </div>
+
+      <!-- Вторая страница -->
+      <div class="grid grid-cols-3 gap-8 min-w-[500px]">
+        <!-- Anchorage -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-align-justify text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Anchorage</span>
+  </div>
+  
+  <!-- StoreKit -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-currency-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">StoreKit</span>
+  </div>
+  
+  <!-- AVFoundation -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-video-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">AVFoundation</span>
+  </div>
+  
+  <!-- AVAudioPlayer -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-headphone-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">AVAudioPlayer</span>
+  </div>
+  
+  <!-- StackOverflow -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-question-answer-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">StackOverflow</span>
+  </div>
+  
+  <!-- PDFKit -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-file-pdf-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">PDFKit</span>
+  </div>
+  
+  <!-- Localization -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-translate text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Localization</span>
+  </div>
+  
+  <!-- Instructions -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-file-list-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Instructions</span>
+  </div>
+  
+  <!-- Charts -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-bar-chart-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Charts</span>
+  </div>
+  
+      </div>
+
+      <!-- Третья страница (и т.д. если нужно) -->
+      <div class="grid grid-cols-3 gap-8 min-w-[500px]">
+        <!-- Firebase -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-fire-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Firebase</span>
+  </div>
+  
+  <!-- Amplitude -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-bar-chart-box-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Amplitude</span>
+  </div>
+  
+  <!-- MVC -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-architecture-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">MVC</span>
+  </div>
+  
+  <!-- Networking/API -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-plug-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Networking/API</span>
+  </div>
+  
+  <!-- MapKit -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-map-pin-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">MapKit</span>
+  </div>
+  
+  <!-- Realm -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-database-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Realm</span>
+  </div>
+  
+  <!-- CoreLocation -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-map-pin-2-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">CoreLocation</span>
+  </div>
+  
+  <!-- Apphud -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-apps-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">Apphud</span>
+  </div>
+  
+  <!-- GoogleAds -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg">
+    <i class="ri-advertisement-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">GoogleAds</span>
+  </div>
+      </div>
+
+    <!-- Третья страница (и т.д. если нужно) -->
+    <div class="grid grid-cols-3 gap-y-0 gap-x-8 min-w-[500px]">
+ 
+  <!-- GoogleAnalytics -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg w-[150px] h-[105px]">
+    <i class="ri-bar-chart-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">GoogleAnalytics</span>
+  </div>
+  
+  <!-- AppsFlyer -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-l w-[150px] h-[105px]">
+    <i class="ri-bar-chart-2-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">AppsFlyer</span>
+  </div>
+  
+  <!-- CocoaPods -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg w-[150px] h-[105px]">
+    <i class="ri-package-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">CocoaPods</span>
+  </div>
+  
+  <!-- ML -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg w-[150px] h-[105px]">
+    <i class="ri-brain-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">ML</span>
+  </div>
+    
+  <!-- ARKit -->
+  <div class="flex flex-col items-center p-4 bg-gray-50 rounded-lg w-[150px] h-[105px]">
+    <i class="ri-ar-line text-4xl text-primary mb-2"></i>
+    <span class="text-gray-700">ARKit</span>
+  </div>
+    </div>
+  </div>
+</div> 
+</div>
+</div>
+<div>
+</section>
+  <section id="softskills" class="bg-white py-20">
+    <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 mb-12">Soft Skills</h2>
+  <div class="space-y-4">
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Communication</span>
+        <span class="text-gray-500">95%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Responsibility</span>
+        <span class="text-gray-500">95%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Self-Organization</span>
+        <span class="text-gray-500">90%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Problem Solving</span>
+        <span class="text-gray-500">85%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Stress Tolerance</span>
+        <span class="text-gray-500">85%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Leadership Potential</span>
+        <span class="text-gray-500">70%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 70%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Critical Thinking</span>
+        <span class="text-gray-500">75%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 75%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Adaptability</span>
+        <span class="text-gray-500">80%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 80%"></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between mb-2">
+        <span class="text-gray-700">Presentation & Negotiation</span>
+        <span class="text-gray-500">90%</span>
+      </div>
+      <div class="h-2 bg-gray-200 rounded-full">
+        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="bg-gray-50 py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Get in Touch</h2>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<form id="contactForm" class="space-y-6">
+<div>
+<label class="block text-gray-700 mb-2" for="name">Name</label>
+<input type="text" id="name" name="user_name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white text-gray-800" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="email">Email</label>
+<input type="email" id="email" name="user_email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+</div>
+<div>
+<label class="block text-gray-700 mb-2" for="message">Message</label>
+<textarea id="message" rows="4" name="message" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 cursor-pointer">Send Message</button>
+</form>
+</div>
+<div class="flex flex-col justify-center">
+<div class="space-y-6">
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+<i class="ri-mail-line text-xl text-primary"></i>
+</div>
+<div>
+<h3 class="text-gray-900 font-bold">Email</h3>
+<p class="text-gray-600">moskvichevm27@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+<i class="ri-map-pin-line text-xl text-primary"></i>
+</div>
+<div>
+<h3 class="text-gray-900 font-bold">Location</h3>
+<p class="text-gray-600">All over the world</p>
+</div>
+</div>
+<div class="flex space-x-4 mt-8">
+<a href="https://github.com/MichaelMoskvichev" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+<i class="ri-github-line text-xl text-gray-700"></i>
+</a>
+<a href="https://www.linkedin.com/in/mikhail-moskvichev-70016a353" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+<i class="ri-linkedin-line text-xl text-gray-700"></i>
+</a>
+<a href="https://t.me/mikhail_mos_27" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+  <i class="ri-telegram-line text-xl text-gray-700"></i>
+</a>
+<a href="https://wa.me/79110257619" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+  <i class="ri-whatsapp-line text-xl text-gray-700"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white text-gray-600 py-8 border-t border-gray-100">
+<div class="container mx-auto px-6 text-center">
+<p>&copy; 2025 Moskvichev Mikhail. All rights reserved.</p>
+</div>
+</footer>
+<div id="successModal" class="fixed inset-0 bg-black/20 hidden items-center justify-center">
+<div class="bg-white p-8 rounded-lg max-w-md shadow-lg">
+<h3 class="text-xl font-bold text-gray-800 mb-4">Message Sent!</h3>
+<p class="text-gray-600 mb-6">Thank you for reaching out. I'll get back to you soon.</p>
+<button onclick="closeModal()" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 cursor-pointer">Close</button>
+</div>
+</div>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+  
+    emailjs.sendForm('service_w9q1dwe', 'template_ys7wgvs', this)
+      .then(function() {
+        document.getElementById('successModal').style.display = 'flex';
+        document.getElementById('contactForm').reset();
+      }, function(error) {
+        alert('Failed to send message. Please try again.\n' + JSON.stringify(error));
+      });
+  });
+  
+  function closeModal() {
+    document.getElementById('successModal').style.display = 'none';
+  }
+  </script>
+</body>
+</html>
