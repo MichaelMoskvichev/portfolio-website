@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moskvichev Mikhail - Projects</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.project-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+.filter-chip { transition: all 0.2s ease; }
+.filter-chip.active { background-color: #3176FF; color: white; }
+</style>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#3176FF',
+        secondary: '#5856D6'
+      },
+      borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+      }
+    }
+  }
+}
+</script>
+</head>
+<body class="bg-white min-h-screen text-gray-800">
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+  <div class="container mx-auto px-6 py-4">
+    <nav class="flex items-center justify-between">
+      <h1 class="text-2xl font-bold text-gray-800">Moskvichev Mikhail</h1>
+      <div class="flex items-center space-x-8">
+        <a href="iOS Developer Portfolio.html#about" data-readdy="true" class="text-gray-600 hover:text-primary">About</a>
+        <a href="iOS Developer Portfolio.html#portfolio" data-readdy="true" class="text-primary font-medium">Portfolio</a>
+        <a href="iOS Developer Portfolio.html#skills" data-readdy="true" class="text-gray-600 hover:text-primary">Skills</a>
+        <a href="iOS Developer Portfolio.html#contact" data-readdy="true" class="text-gray-600 hover:text-primary">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="pt-24">
+  <section class="container mx-auto px-6 py-6">
+    <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center">
+        <a href="iOS Developer Portfolio.html" data-readdy="true" class="flex items-center text-gray-600 hover:text-primary mr-4">
+          <i class="ri-arrow-left-line mr-2"></i>
+          <span>Back to Portfolio</span>
+        </a>
+        <h2 class="text-3xl font-bold text-gray-900">All Projects</h2>
+      </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden">
+        <img src="pdfeditor.png" alt="Edit PDF" class="w-full h-48 object-cover rounded-lg mb-4">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Edit PDF, Read PDF, Sign PDF</h3>
+    <p class="text-gray-600 mb-4">A user-friendly PDF editor and reader designed for seamless document management, annotation, and reading on iPhone and iPad.</p>
+    
+    <div class="flex flex-wrap gap-2 mb-4">
+      <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+      <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UIKit</span>
+      <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PDFKit</span>
+      <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+      <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">IQKeyboardManager</span>
+      <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+      <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+      <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">MobileCoreServices</span>
+      <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">VisionKit</span>
+      <span class="px-3 py-1 bg-purple-50 text-purple-900 rounded-full text-sm">SwiftEntryKit</span>
+      <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Lottie</span>
+      <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Alamofire</span>
+      <span class="px-3 py-1 bg-green-50 text-green-900 rounded-full text-sm">OCR</span>
+      <span class="px-3 py-1 bg-pink-50 text-pink-900 rounded-full text-sm">Realm</span>
+      <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">MessageUI</span>
+      <span class="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-sm">WebKit</span>
+      <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">MVC</span>
+    </div>
+    
+    <a href="https://apps.apple.com/us/app/pdf-document-editor-read-book/id6504371765" target="_blank" class="text-primary hover:text-primary/80 flex items-center">
+      <span>View in App Store</span>
+      <i class="ri-arrow-right-line ml-2"></i>
+    </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden">
+        <img src="mypreg.png" alt="My Pregnancy Life: Prenatal" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">My Pregnancy Life: Prenatal</h3>
+          <p class="text-gray-600 mb-4">My Pregnancy Life is your essential guide and assistant through every stage of your pregnancy.
+            Track your journey, understand your baby's growth, and discover essential tips, articles, and goods curated just for you. Get vital information, articles and videos about your pregnancy and your baby's growth week by week.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+          <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UIKit</span>
+          <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Contentful</span>
+          <span class="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-sm">WebKit</span>
+          <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">GoogleMobileAds</span>
+          <span class="px-3 py-1 bg-pink-50 text-pink-900 rounded-full text-sm">Realm</span>
+          <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+          <span class="px-3 py-1 bg-purple-50 text-purple-900 rounded-full text-sm">SwiftFortuneWheel</span>
+          <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">MVC</span>
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Amplitude</span>
+          <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">AVKit</span>
+          </div>
+          <a href="https://apps.apple.com/app/id6670175020" class="text-primary hover:text-primary/80 flex items-center">
+          <span>View in App Store</span>
+          <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+        </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden">
+        <img src="bcard.png" alt="BusinessCard" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Business Card</h3>
+          <p class="text-gray-600 mb-4">The Digital Business Card Scanner and Reader is the app to exchange and manage business your business cards and contacts on iPhone and iPad. Business card designs are effortlessly created with just a few simple taps on your device. Never worry about running out of business cards again. The app eliminates the need for creating and printing high-quality cards. What's more, the cards you create can be sent in digital formats, making it easier for your contacts to access them.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">Firebase</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-green-100 text-yellow-800 rounded-full text-sm">IQKeyboardManager</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">SnapKit</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">VisionKit</span>
+            <span class="px-3 py-1 bg-pink-50 text-pink-900 rounded-full text-sm">Realm</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">MVC</span>
+          </div>
+          <a href="https://apps.apple.com/app/id6446372111" class="text-primary hover:text-primary/80 flex items-center whitespace-nowrap">
+            <span>View in App Store</span>
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,arkit,scenekit" data-category="entertainment,education">
+        <img src="milT.png" alt="MileageTracker" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Mileage Tracker Expert</h3>
+          <p class="text-gray-600 mb-4">Mileage Tracker Expert, the ultimate app for tracking mileage and expenses. Simplify expense reimbursement and maximize your tax deductions effortlessly.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">MapKit</span>
+            <span class="px-3 py-1 bg-blue-200 text-blue-900 rounded-full text-sm">Firebase</span>
+            <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-sm">Realm</span>
+            <span class="px-3 py-1 bg-pink-50 text-pink-900 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Storyboard</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Amplitude</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-900 rounded-full text-sm">Charts</span>
+          </div>
+          <a href="https://apps.apple.com/ru/app/mileage-tracker-expert/id6473814642" class="text-primary hover:text-primary/80 flex items-center whitespace-nowrap">
+            <span>View in App Store</span>
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,mapkit,coredata" data-category="travel,lifestyle">
+        <img src="pf.png" alt="PencilFinder" class="w-90 h-48 object-cover mx-auto">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Pencil Finder</h3>
+          <p class="text-gray-600 mb-4">Find My Lost Pencil via Bluetooth. Find Headphones, Watches and Lost Devices with the Device Finder app. Device Tracker. Pencil Finder.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Lottie</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">CoreBluetooth</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">AVFoundation</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">MVC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,uikit,coreml" data-category="photography,lifestyle">
+        <img src="tvR.png" alt="TVRemote" class="w-150 h-48 object-cover mx-auto">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">TV Remote Control</h3>
+          <p class="text-gray-600 mb-4">Universal TV Remote Control for connecting to your Smart TV. Compatible with all Smart TV models & TV Boxes TV. Multiple channels, advanced controls.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">swiftui</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">ReachabilitySwift</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Starscream</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">google-cast-sdk</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">Google-Mobile-Ads-SDK</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Amplitude</span>
+          </div>
+          <a href="https://apps.apple.com/app/6596728313" class="text-primary hover:text-primary/80 flex items-center whitespace-nowrap">
+            <span>View in App Store</span>
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,swiftui,combine" data-category="finance,business">
+        <img src="qs.png" alt="Quit Smoking" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Quit Smoking</h3>
+          <p class="text-gray-600 mb-4">Transform your life with our Quit Smoking Vaping and Drinking app! Get a sober habit without cravings. Stop your addiction to cigarettes, e-cigarettes, alcohol, tobacco, weed or vapes.
+            Monitor health, track progress, and unlock rewards. Your guide to a stress-free, smoke-free life starts here!
+            React your goals.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Lottie</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">SnapKit</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">CalendarKit</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">Realm</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">Amplitude</span>
+            
+          </div>
+          <a href="https://apps.apple.com/us/app/id6476659722" class="text-primary hover:text-primary/80 flex items-center whitespace-nowrap">
+            <span>View in App Store</span>
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,uikit,avfoundation" data-category="entertainment,music">
+        <img src="budget.png" alt="BudgetTracker" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Budget Planner</h3>
+          <p class="text-gray-600 mb-4">Track and manage your expenses and income with the Expense Budget: Money Manager app. Add repeating transactions and custom categories. Use the unlimited Bills Organizer.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">AVFoundation</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Lottie</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Anchorage</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">DGCharts</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">Realm</span>
+          </div>
+          <a href="https://apps.apple.com/app/id6505103992" class="text-primary hover:text-primary/80 flex items-center whitespace-nowrap">
+            <span>View in App Store</span>
+            <i class="ri-arrow-right-line ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,spritekit,gamekit" data-category="entertainment,games">
+        <img src="pdfC.png" alt="Converter" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">PDF Converter</h3>
+          <p class="text-gray-600 mb-4">application in which you can convert pdf to any format. And also, if desired, use it for minor editing of pdf files. The formats of conversion files are varied and can be converted to any of them.</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">AVFoundation</span>
+            <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Alamofire</span>
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">SnapKit</span>
+            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Zip</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">API</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">ZLImageEditor</span>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- Project 10 -->
+    <div class="bg-white rounded-lg shadow-sm project-card overflow-hidden" data-tech="swift,spritekit,gamekit" data-category="entertainment,games">
+      <img src="scan.png" alt="PDF Scanner" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">PDF Scanner</h3>
+        <p class="text-gray-600 mb-4">Scan App - PDF Scanner is your ultimate solution to scan documents, receipts, invoices, notes, and photos into PDF files. Edit, crop, rotate, sign, your documents and pictures. Easily use the draw, add text and filters features in the Photo Scanner & Doc Scanner and seamlessly transform your device into a high-performance scanner, delivering top-notch quality and unmatched convenience.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Swift</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">UIKit</span>
+          <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">AVFoundation</span>
+          <span class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ApphudSDK</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Alamofire</span>
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">StoreKit</span>
+          <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">SnapKit</span>
+          <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Zip</span>
+          <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">API</span>
+          <span class="px-3 py-1 bg-blue-50 text-blue-900 rounded-full text-sm">ZLImageEditor</span>
+      </div>
+        <a href="https://apps.apple.com/app/id6475809245" class="text-primary hover:text-primary/80 flex items-center whitespace-nowrap">
+          <span>View in App Store</span>
+          <i class="ri-arrow-right-line ml-2"></i>
+        </a>
+      </div>
+    </div>
+ 
+
+    <div id="techFilterDropdown" class="fixed inset-0 bg-black/20 hidden items-center justify-center z-50">
+      <div class="bg-white p-8 rounded-lg max-w-md shadow-lg w-full mx-4">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-gray-800">Filter by Technology</h3>
+          <button onclick="closeTechFilter()" class="text-gray-500 hover:text-gray-700">
+            <i class="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-swift" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="swift">
+            <label for="tech-swift" class="ml-2 text-gray-700">Swift</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-swiftui" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="swiftui">
+            <label for="tech-swiftui" class="ml-2 text-gray-700">SwiftUI</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-uikit" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="uikit">
+            <label for="tech-uikit" class="ml-2 text-gray-700">UIKit</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-arkit" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="arkit">
+            <label for="tech-arkit" class="ml-2 text-gray-700">ARKit</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-coreml" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="coreml">
+            <label for="tech-coreml" class="ml-2 text-gray-700">CoreML</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-healthkit" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="healthkit">
+            <label for="tech-healthkit" class="ml-2 text-gray-700">HealthKit</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="tech-firebase" class="tech-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="firebase">
+            <label for="tech-firebase" class="ml-2 text-gray-700">Firebase</label>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-end space-x-4">
+          <button onclick="clearTechFilters()" class="px-4 py-2 border border-gray-300 rounded !rounded-button text-gray-700 hover:bg-gray-50 whitespace-nowrap">Clear All</button>
+          <button onclick="applyTechFilters()" class="px-4 py-2 bg-primary text-white rounded !rounded-button hover:bg-primary/90 whitespace-nowrap">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="categoryFilterDropdown" class="fixed inset-0 bg-black/20 hidden items-center justify-center z-50">
+      <div class="bg-white p-8 rounded-lg max-w-md shadow-lg w-full mx-4">
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-gray-800">Filter by Category</h3>
+          <button onclick="closeCategoryFilter()" class="text-gray-500 hover:text-gray-700">
+            <i class="ri-close-line text-2xl"></i>
+          </button>
+        </div>
+        <div class="space-y-3">
+          <div class="flex items-center">
+            <input type="checkbox" id="category-fitness" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="fitness">
+            <label for="category-fitness" class="ml-2 text-gray-700">Fitness</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="category-health" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="health">
+            <label for="category-health" class="ml-2 text-gray-700">Health</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="category-productivity" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="productivity">
+            <label for="category-productivity" class="ml-2 text-gray-700">Productivity</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="category-entertainment" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="entertainment">
+            <label for="category-entertainment" class="ml-2 text-gray-700">Entertainment</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="category-finance" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="finance">
+            <label for="category-finance" class="ml-2 text-gray-700">Finance</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="category-travel" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="travel">
+            <label for="category-travel" class="ml-2 text-gray-700">Travel</label>
+          </div>
+          <div class="flex items-center">
+            <input type="checkbox" id="category-education" class="category-checkbox w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary" value="education">
+            <label for="category-education" class="ml-2 text-gray-700">Education</label>
+          </div>
+        </div>
+        <div class="mt-8 flex justify-end space-x-4">
+          <button onclick="clearCategoryFilters()" class="px-4 py-2 border border-gray-300 rounded !rounded-button text-gray-700 hover:bg-gray-50 whitespace-nowrap">Clear All</button>
+          <button onclick="applyCategoryFilters()" class="px-4 py-2 bg-primary text-white rounded !rounded-button hover:bg-primary/90 whitespace-nowrap">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-white text-gray-600 py-8 border-t border-gray-100 mt-12">
+  <div class="container mx-auto px-6 text-center">
+    <p>&copy; 2025 Moskvichev Mikhail. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('header');
+  
+  document.addEventListener('scroll', function() {
+    if (window.scrollY > 0) {
+      header.classList.add('shadow-sm');
+    } else {
+      header.classList.remove('shadow-sm');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Sort dropdown functionality
+  const sortButton = document.getElementById('sortButton');
+  const sortDropdown = document.getElementById('sortDropdown');
+  const sortText = document.getElementById('sortText');
+  
+  sortButton.addEventListener('click', function() {
+    sortDropdown.classList.toggle('hidden');
+  });
+  
+  document.querySelectorAll('#sortDropdown a').forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+      sortText.textContent = this.textContent;
+      sortDropdown.classList.add('hidden');
+      sortProjects(this.getAttribute('data-value'));
+    });
+  });
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!sortButton.contains(e.target) && !sortDropdown.contains(e.target)) {
+      sortDropdown.classList.add('hidden');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Technology filter modal
+  const techFilterBtn = document.getElementById('techFilterBtn');
+  const techFilterDropdown = document.getElementById('techFilterDropdown');
+  
+  techFilterBtn.addEventListener('click', function() {
+    techFilterDropdown.style.display = 'flex';
+  });
+  
+  // Category filter modal
+  const categoryFilterBtn = document.getElementById('categoryFilterBtn');
+  const categoryFilterDropdown = document.getElementById('categoryFilterDropdown');
+  
+  categoryFilterBtn.addEventListener('click', function() {
+    categoryFilterDropdown.style.display = 'flex';
+  });
+});
+
+// Filter functions
+let activeFilters = {
+  tech: [],
+  category: []
+};
+
+function closeTechFilter() {
+  document.getElementById('techFilterDropdown').style.display = 'none';
+}
+
+function closeCategoryFilter() {
+  document.getElementById('categoryFilterDropdown').style.display = 'none';
+}
+
+function clearTechFilters() {
+  document.querySelectorAll('.tech-checkbox').forEach(checkbox => {
+    checkbox.checked = false;
+  });
+}
+
+function clearCategoryFilters() {
+  document.querySelectorAll('.category-checkbox').forEach(checkbox => {
+    checkbox.checked = false;
+  });
+}
+
+function applyTechFilters() {
+  activeFilters.tech = [];
+  document.querySelectorAll('.tech-checkbox:checked').forEach(checkbox => {
+    activeFilters.tech.push(checkbox.value);
+  });
+  updateActiveFiltersDisplay();
+  filterProjects();
+  closeTechFilter();
+}
+
+function applyCategoryFilters() {
+  activeFilters.category = [];
+  document.querySelectorAll('.category-checkbox:checked').forEach(checkbox => {
+    activeFilters.category.push(checkbox.value);
+  });
+  updateActiveFiltersDisplay();
+  filterProjects();
+  closeCategoryFilter();
+}
+
+function updateActiveFiltersDisplay() {
+  const activeFiltersContainer = document.getElementById('activeFilters');
+  activeFiltersContainer.innerHTML = '';
+  
+  activeFilters.tech.forEach(tech => {
+    const chip = document.createElement('div');
+    chip.className = 'filter-chip px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm flex items-center';
+    chip.innerHTML = `
+      <span>${tech.charAt(0).toUpperCase() + tech.slice(1)}</span>
+      <button class="ml-2" data-type="tech" data-value="${tech}">
+        <i class="ri-close-line"></i>
+      </button>
+    `;
+    activeFiltersContainer.appendChild(chip);
+  });
+  
+  activeFilters.category.forEach(category => {
+    const chip = document.createElement('div');
+    chip.className = 'filter-chip px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm flex items-center';
+    chip.innerHTML = `
+      <span>${category.charAt(0).toUpperCase() + category.slice(1)}</span>
+      <button class="ml-2" data-type="category" data-value="${category}">
+        <i class="ri-close-line"></i>
+      </button>
+    `;
+    activeFiltersContainer.appendChild(chip);
+  });
+  
+  // Add event listeners to remove buttons
+  document.querySelectorAll('.filter-chip button').forEach(button => {
+    button.addEventListener('click', function() {
+      const type = this.getAttribute('data-type');
+      const value = this.getAttribute('data-value');
+      
+      activeFilters[type] = activeFilters[type].filter(item => item !== value);
+      
+      // Uncheck the corresponding checkbox
+      if (type === 'tech') {
+        document.getElementById(`tech-${value}`).checked = false;
+      } else if (type === 'category') {
+        document.getElementById(`category-${value}`).checked = false;
+      }
+      
+      updateActiveFiltersDisplay();
+      filterProjects();
+    });
+  });
+}
+
+function filterProjects() {
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  projectCards.forEach(card => {
+    const techTags = card.getAttribute('data-tech').split(',');
+    const categoryTags = card.getAttribute('data-category').split(',');
+    
+    let showCard = true;
+    
+    // Filter by tech if tech filters are active
+    if (activeFilters.tech.length > 0) {
+      const hasTech = activeFilters.tech.some(tech => techTags.includes(tech));
+      if (!hasTech) showCard = false;
+    }
+    
+    // Filter by category if category filters are active
+    if (activeFilters.category.length > 0) {
+      const hasCategory = activeFilters.category.some(category => categoryTags.includes(category));
+      if (!hasCategory) showCard = false;
+    }
+    
+    card.style.display = showCard ? 'block' : 'none';
+  });
+}
+
+function sortProjects(sortType) {
+  const projectsContainer = document.querySelector('.grid');
+  const projectCards = Array.from(document.querySelectorAll('.project-card'));
+  
+  switch(sortType) {
+    case 'latest':
+      // For demo purposes, we'll just keep the original order
+      break;
+    case 'popular':
+      // Sort by featured status first
+      projectCards.sort((a, b) => {
+        const aFeatured = a.querySelector('.absolute') !== null;
+        const bFeatured = b.querySelector('.absolute') !== null;
+        return bFeatured - aFeatured;
+      });
+      break;
+    case 'name':
+      // Sort alphabetically by title
+      projectCards.sort((a, b) => {
+        const aTitle = a.querySelector('h3').textContent;
+        const bTitle = b.querySelector('h3').textContent;
+        return aTitle.localeCompare(bTitle);
+      });
+      break;
+  }
+  
+  // Remove all cards from container
+  projectCards.forEach(card => card.remove());
+  
+  // Add sorted cards back to container
+  projectCards.forEach(card => projectsContainer.appendChild(card));
+}
+</script>
+</body>
+</html>
