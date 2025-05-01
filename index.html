@@ -46,82 +46,119 @@
     })();
   </script>
 </head>
-<body class="bg-white min-h-screen text-gray-800">
+<body class="bg-white min-h-screen text-gray-800 pt-20">
   <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
-<div class="container mx-auto px-6 py-4">
-<nav class="flex items-center justify-between">
-<h1 class="text-2xl font-bold text-gray-800">Moskvichev Mikhail</h1>
-<div class="flex items-center space-x-8">
-<a href="#about" class="text-gray-600 hover:text-primary">About</a>
-<a href="#portfolio" class="text-gray-600 hover:text-primary">Portfolio</a>
-<a href="#skills" class="text-gray-600 hover:text-primary">Skills</a>
-<a href="#contact" class="text-gray-600 hover:text-primary">Contact</a>
-</div>
-</nav>
-</div>
-</header>
-<main class="pt-20">
-<section class="container mx-auto px-6 py-20">
-<div class="flex items-center justify-between">
-<div class="w-1/2">
-<h2 class="text-5xl font-bold text-gray-800 mb-6">Building Elegant iOS Apps That Users Love</h2>
-<p class="text-xl text-gray-600 mb-8">Experienced iOS Developer with 4 years of experience building innovative and user-centric mobile applications. Focused on delivering beautiful, performant, and scalable mobile apps with a strong UI and UX foundation.</p>
-<a href="Project-Portfolio-Collection.html" data-readdy="true">
-<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 cursor-pointer">View My Work</button>
-</a>
-</div>
-<div class="w-1/2 flex justify-end">
-<img src="myPhoto.jpg" alt="Michael Moskvichev" class="w-80 h-90 rounded-full object-cover shadow-xl">
-</div>
-</div>
-<section id="about" class="bg-gray-50 py-20">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-900 mb-12">About Me</h2>
-      <div class="flex items-center gap-12">
-        <div class="w-1/3">
-          <img src="IMG_9218.jpg" alt="About Moskvichev Mikhail" class="w-full h-[500px] object-cover rounded-lg shadow-lg">
+    <div class="container mx-auto px-6 py-4">
+      <nav class="flex items-center justify-between">
+        <h1 class="text-xl sm:text-2xl font-bold text-gray-800">Moskvichev Mikhail</h1>
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" class="sm:hidden text-2xl text-gray-700 focus:outline-none">
+          <i class="ri-menu-line"></i>
+        </button>
+        <!-- Navigation links -->
+        <div id="menu" class="hidden sm:flex flex-col sm:flex-row sm:items-center sm:space-x-8 absolute sm:static top-16 left-0 w-full sm:w-auto bg-white sm:bg-transparent shadow-md sm:shadow-none rounded-b-md sm:rounded-none z-40 px-6 py-4 sm:py-0">
+          <a href="#about" class="block py-2 sm:py-0 text-gray-600 hover:text-primary">About</a>
+          <a href="#portfolio" class="block py-2 sm:py-0 text-gray-600 hover:text-primary">Portfolio</a>
+          <a href="#skills" class="block py-2 sm:py-0 text-gray-600 hover:text-primary">Skills</a>
+          <a href="#contact" class="block py-2 sm:py-0 text-gray-600 hover:text-primary">Contact</a>
         </div>
-        <div class="w-2/3">
-          <div class="space-y-6">
-            <p class="text-lg text-gray-600 leading-relaxed">
-              My name is Mikhail, and I’m an iOS developer with nearly four years of experience. I began learning programming through online courses on Udemy, but most of my growth came from hands-on practice and working on real-world tasks.
-            </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
-              I enjoy the full development cycle — from the initial idea to a production-ready app. I prefer implementing all solutions independently, from architecture to custom animations. I have a special passion for crafting unique user interfaces that feel intuitive, smooth, and visually appealing.
-            </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
-              I'm detail-oriented and value clean, readable code. I thrive both in team environments and in leadership roles. My colleagues often describe me as calm, respectful, and focused on delivering high-quality results.
-            </p>
-            <p class="text-lg text-gray-600 leading-relaxed">
-              Outside of development, I enjoy working out, going for walks, playing video games, and building model ships and cars — a hobby that teaches patience and precision.
-            </p>
-            <div class="grid grid-cols-2 gap-6 mt-8">
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="text-3xl font-bold text-primary mb-2">4</div>
-                <div class="text-gray-600">Years of Experience</div>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="text-3xl font-bold text-primary mb-2">10+</div>
-                <div class="text-gray-600">Favorite Technologies</div>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="text-3xl font-bold text-primary mb-2">∞</div>
-                <div class="text-gray-600">Ideas & Energy</div>
-              </div>
-              <div class="bg-white p-6 rounded-lg shadow-sm">
-                <div class="text-3xl font-bold text-primary mb-2">10+</div>
-                <div class="text-gray-600">Projects</div>
-              </div>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+<main class="pt-20">
+  <section class="container mx-auto px-6 py-0">
+    <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+      <!-- Text Block -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+          Building Elegant iOS Apps That Users Love
+        </h2>
+        <p class="text-base sm:text-lg lg:text-xl text-gray-600 mb-8">
+          Experienced iOS Developer with 4 years of experience building innovative and user-centric mobile applications. Focused on delivering beautiful, performant, and scalable mobile apps with a strong UI and UX foundation.
+        </p>
+        <a href="Project-Portfolio-Collection.html" data-readdy="true">
+          <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 cursor-pointer">
+            View My Work
+          </button>
+        </a>
+      </div>
+
+      <!-- Image Block -->
+      <div class="w-full lg:w-1/2 flex justify-center lg:justify-end mt-0 lg:mt-0">
+        <img src="myPhoto.jpg" alt="Michael Moskvichev"
+          class="w-48 h-58 sm:w-60 sm:h-70 lg:w-80 lg:h-90 rounded-full object-cover shadow-xl">
+      </div>
+    </div>
+  </section>
+</main>
+
+<section id="about" class="bg-gray-50 py-10">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 mb-12 text-center lg:text-left">About Me</h2>
+    
+    <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+      <!-- Image -->
+      <div class="w-full lg:w-1/3">
+        <img src="IMG_9218.jpg" alt="About Moskvichev Mikhail"
+             class="w-full h-64 sm:h-96 lg:h-[500px] object-cover rounded-lg shadow-lg">
+      </div>
+
+      <!-- Text -->
+      <div class="w-full lg:w-2/3">
+        <div class="space-y-6 text-justify">
+          <p class="text-lg text-gray-600 leading-relaxed">
+            My name is Mikhail, and I’m an iOS developer with nearly four years of experience. I began learning programming through online courses on Udemy, but most of my growth came from hands-on practice and working on real-world tasks.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            I enjoy the full development cycle — from the initial idea to a production-ready app. I prefer implementing all solutions independently, from architecture to custom animations. I have a special passion for crafting unique user interfaces that feel intuitive, smooth, and visually appealing.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            I'm detail-oriented and value clean, readable code. I thrive both in team environments and in leadership roles. My colleagues often describe me as calm, respectful, and focused on delivering high-quality results.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Outside of development, I enjoy working out, going for walks, playing video games, and building model ships and cars — a hobby that teaches patience and precision.
+          </p>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div class="text-3xl font-bold text-primary mb-2">4</div>
+              <div class="text-gray-600">Years of Experience</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div class="text-3xl font-bold text-primary mb-2">10+</div>
+              <div class="text-gray-600">Favorite Technologies</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div class="text-3xl font-bold text-primary mb-2">∞</div>
+              <div class="text-gray-600">Ideas & Energy</div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center">
+              <div class="text-3xl font-bold text-primary mb-2">10+</div>
+              <div class="text-gray-600">Projects</div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-  </section>  
+  </div>
+</section>
+
 <section id="portfolio" class="bg-gray-50 py-20">
 <div class="container mx-auto px-6">
 <h2 class="text-3xl font-bold text-gray-900 mb-12">My Projects</h2>
-<div class="grid grid-cols-2 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
   <div class="bg-white p-6 rounded-lg shadow-sm project-card">
     <img src="pdfeditor.png" alt="Edit PDF" class="w-full h-48 object-cover rounded-lg mb-4">
@@ -190,7 +227,7 @@
 <section id="skills" class="bg-white py-20">
 <div class="container mx-auto px-6">
 <h2 class="text-3xl font-bold text-gray-900 mb-12">Technical Skills</h2>
-<div class="grid grid-cols-2 gap-12">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
 <div>
 <h3 class="text-xl font-bold text-gray-900 mb-6">Development</h3>
 <div class="space-y-4">
@@ -458,172 +495,180 @@
   </div>
     </div>
   </div>
+  <!-- Swipe Indicator (visible only on small screens) -->
+  <div class="mt-4 flex justify-center sm:hidden">
+    <div class="flex items-center space-x-1 text-gray-500 text-sm animate-bounce">
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+      </svg>
+      <span>Swipe</span>
+    </div>
+  </div>
 </div> 
 </div>
 </div>
 <div>
-</section>
   <section id="softskills" class="bg-white py-20">
+    <div class="container mx-auto px-2">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12">Soft Skills</h2>
+      <div class="space-y-4">
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Communication</span>
+            <span class="text-gray-500">95%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Responsibility</span>
+            <span class="text-gray-500">95%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Self-Organization</span>
+            <span class="text-gray-500">90%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Problem Solving</span>
+            <span class="text-gray-500">85%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Stress Tolerance</span>
+            <span class="text-gray-500">85%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Leadership Potential</span>
+            <span class="text-gray-500">70%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 70%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Critical Thinking</span>
+            <span class="text-gray-500">75%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 75%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Adaptability</span>
+            <span class="text-gray-500">80%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 80%"></div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex justify-between mb-2">
+            <span class="text-gray-700">Presentation & Negotiation</span>
+            <span class="text-gray-500">90%</span>
+          </div>
+          <div class="h-2 bg-gray-200 rounded-full">
+            <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="bg-gray-50 py-20">
     <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-gray-900 mb-12">Soft Skills</h2>
-  <div class="space-y-4">
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Communication</span>
-        <span class="text-gray-500">95%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Responsibility</span>
-        <span class="text-gray-500">95%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 95%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Self-Organization</span>
-        <span class="text-gray-500">90%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Problem Solving</span>
-        <span class="text-gray-500">85%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Stress Tolerance</span>
-        <span class="text-gray-500">85%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 85%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Leadership Potential</span>
-        <span class="text-gray-500">70%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 70%"></div>
+      <h2 class="text-3xl font-bold text-gray-900 mb-12">Get in Touch</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label class="block text-gray-700 mb-2" for="name">Name</label>
+              <input type="text" id="name" name="user_name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white text-gray-800" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2" for="email">Email</label>
+              <input type="email" id="email" name="user_email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2" for="message">Message</label>
+              <textarea id="message" rows="4" name="message" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required></textarea>
+            </div>
+            <button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 cursor-pointer">Send Message</button>
+          </form>
+        </div>
+        <div class="flex flex-col justify-center">
+          <div class="space-y-6">
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                <i class="ri-mail-line text-xl text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-gray-900 font-bold">Email</h3>
+                <p class="text-gray-600">moskvichevm27@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
+                <i class="ri-map-pin-line text-xl text-primary"></i>
+              </div>
+              <div>
+                <h3 class="text-gray-900 font-bold">Location</h3>
+                <p class="text-gray-600">All over the world</p>
+              </div>
+            </div>
+            <div class="flex space-x-4 mt-8">
+              <a href="https://github.com/MichaelMoskvichev" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+                <i class="ri-github-line text-xl text-gray-700"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mikhail-moskvichev-70016a353" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+                <i class="ri-linkedin-line text-xl text-gray-700"></i>
+              </a>
+              <a href="https://t.me/mikhail_mos_27" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+                <i class="ri-telegram-line text-xl text-gray-700"></i>
+              </a>
+              <a href="https://wa.me/79110257619" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
+                <i class="ri-whatsapp-line text-xl text-gray-700"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Critical Thinking</span>
-        <span class="text-gray-500">75%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 75%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Adaptability</span>
-        <span class="text-gray-500">80%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 80%"></div>
-      </div>
-    </div>
-
-    <div>
-      <div class="flex justify-between mb-2">
-        <span class="text-gray-700">Presentation & Negotiation</span>
-        <span class="text-gray-500">90%</span>
-      </div>
-      <div class="h-2 bg-gray-200 rounded-full">
-        <div class="h-2 bg-primary rounded-full skill-bar" style="width: 90%"></div>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="contact" class="bg-gray-50 py-20">
-<div class="container mx-auto px-6">
-<h2 class="text-3xl font-bold text-gray-900 mb-12">Get in Touch</h2>
-<div class="grid grid-cols-2 gap-12">
-<div>
-<form id="contactForm" class="space-y-6">
-<div>
-<label class="block text-gray-700 mb-2" for="name">Name</label>
-<input type="text" id="name" name="user_name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary bg-white text-gray-800" required>
-</div>
-<div>
-<label class="block text-gray-700 mb-2" for="email">Email</label>
-<input type="email" id="email" name="user_email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required>
-</div>
-<div>
-<label class="block text-gray-700 mb-2" for="message">Message</label>
-<textarea id="message" rows="4" name="message" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-primary" required></textarea>
-</div>
-<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 cursor-pointer">Send Message</button>
-</form>
-</div>
-<div class="flex flex-col justify-center">
-<div class="space-y-6">
-<div class="flex items-center">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
-<i class="ri-mail-line text-xl text-primary"></i>
-</div>
-<div>
-<h3 class="text-gray-900 font-bold">Email</h3>
-<p class="text-gray-600">moskvichevm27@gmail.com</p>
-</div>
-</div>
-<div class="flex items-center">
-<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mr-4">
-<i class="ri-map-pin-line text-xl text-primary"></i>
-</div>
-<div>
-<h3 class="text-gray-900 font-bold">Location</h3>
-<p class="text-gray-600">All over the world</p>
-</div>
-</div>
-<div class="flex space-x-4 mt-8">
-<a href="https://github.com/MichaelMoskvichev" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
-<i class="ri-github-line text-xl text-gray-700"></i>
-</a>
-<a href="https://www.linkedin.com/in/mikhail-moskvichev-70016a353" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
-<i class="ri-linkedin-line text-xl text-gray-700"></i>
-</a>
-<a href="https://t.me/mikhail_mos_27" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
-  <i class="ri-telegram-line text-xl text-gray-700"></i>
-</a>
-<a href="https://wa.me/79110257619" class="w-12 h-12 flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-full">
-  <i class="ri-whatsapp-line text-xl text-gray-700"></i>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+  </section>
+  
 </main>
 <footer class="bg-white text-gray-600 py-8 border-t border-gray-100">
 <div class="container mx-auto px-6 text-center">
